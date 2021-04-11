@@ -1,13 +1,12 @@
 # Permanent redirect to HTTPS
-0.0.0.0:80, garjon.com, www.garjon.com {
+0.0.0.0:80, machax.xyz, www.machax.xyz {
   log stdout
   errors stderr
-  redir https://blog.garjon.com{uri} 301
+  redir https://machax.xyz{uri} 301
 }
 
-https://blog.garjon.com {
+https://machax.xyz {
   log stdout
   errors stderr
-  tls gareth.jones@garjon.com
   root /srv
 }
