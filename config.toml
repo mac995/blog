@@ -1,7 +1,7 @@
-baseurl = "https://blog.garjon.com/"
-title = "Life of Garjon"
+baseurl = "https://machax.xyz/"
+title = "Hax of Mac"
 languageCode = "en-au"
-disqusShortname = "lifeofgarjon"
+disqusShortname = "haxofmac"
 MetaDataFormat = "toml"
 theme = "hyde-x"
 paginate = 10
@@ -48,14 +48,10 @@ paginate = 10
     # Default (if omitted) is "Blog".
     home = "Blog"
 
-    # Metadata used to drive integrations.
-    googleAnalytics = "UA-46049630-1"
-    gravatarHash = "8932fea03d1cad118c016418aa22d895"
-
     # Sidebar social links, these must be full URLs.
-    github = "https://github.com/Garjon"
-    linkedin = "https://www.linkedin.com/in/garjon/"
-    twitter = "https://twitter.com/Gar_Jon"
+    # github = "https://github.com/Garjon"
+    # linkedin = "https://www.linkedin.com/in/garjon/"
+    # twitter = "https://twitter.com/Gar_Jon"
 
     # Other social-like sidebar links
     rss = true  # switch to true to enable RSS icon link
