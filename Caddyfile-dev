@@ -1,4 +1,4 @@
-localhost:80, 192.168.33.10 {
+localhost:80, 127.0.0.1 {
   log stdout
   errors stderr
   tls off
