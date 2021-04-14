@@ -1,12 +1,16 @@
-# Permanent redirect to HTTPS
-0.0.0.0:80, ucuntu.com, www.ucuntu.com {
-  log stdout
-  errors stderr
-  redir https://ucuntu.com{uri} 301
-}
+hugo:
+  image: publysher/hugo
+  command: hugo
+  volumes:
+    - ..:/usr/share/blog
 
-https://ucuntu.com {
-  log stdout
-  errors stderr
-  root /srv
-}
+caddy:
+  image: abiosoft/caddy
+  restart: always
+  ports:
+    - 80:80
+    - 443:443
+  volumes:
+    - ../Caddyfile-prod:/etc/Caddyfile
+    - ../caddy:/root/.caddy
+    - ../public:/srv
